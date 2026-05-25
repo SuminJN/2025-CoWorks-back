@@ -10,6 +10,16 @@ CoWorks Backend는 PDF 기반 행정 문서를 템플릿으로 등록하고, 해
 
 문서마다 입력 필드, 테이블 필드, 서명 위치가 달라질 수 있기 때문에 문서 데이터는 PostgreSQL의 `JSONB` 타입으로 유연하게 저장합니다. 사용자, 문서, 역할, 폴더, 알림처럼 관계가 명확한 데이터는 JPA 엔티티로 관리하여 문서 처리 흐름의 정합성을 유지합니다.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/86a2e14f-dbf1-41e6-8225-006e52fc92e6" width="49%" />
+  <img src="https://github.com/user-attachments/assets/c283e0fd-0475-462a-b72f-6dfc9577e843" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/662d1051-5741-431f-9317-d41d5efc11cd" width="49%" />
+  <img src="https://github.com/user-attachments/assets/2672aa39-2457-4811-9f58-dc1f21c7600b" width="49%" />
+</p>
+
 ## 주요 기능
 
 - **인증 및 사용자 관리**
