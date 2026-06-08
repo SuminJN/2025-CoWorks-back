@@ -135,52 +135,6 @@ src/main/java/com/hiswork/backend/
 └── util/             # 인증, JWT 유틸리티
 ```
 
-## 실행 환경
-
-- Java 17
-- PostgreSQL
-- Gradle
-
-`application.yml`은 `.env` 파일을 선택적으로 불러오도록 설정되어 있습니다.
-
-```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=coworks
-DB_USERNAME=postgres
-DB_PASSWORD=password
-
-JWT_SECRET_KEY=your-jwt-secret-key
-
-MAIL_USERNAME=your-mail-account
-MAIL_PASSWORD=your-mail-password
-
-FRONTEND_URL=http://localhost:5173
-
-HISNET_URL=your-hisnet-url
-HISNET_ACCESS_KEY=your-hisnet-access-key
-```
-
-## 실행 방법
-
-```bash
-./gradlew bootRun
-```
-
-Gradle wrapper가 없는 환경에서는 아래 명령어를 사용할 수 있습니다.
-
-```bash
-gradle bootRun
-```
-
-기본 서버 주소는 `http://localhost:8080`입니다.
-
-## 테스트
-
-```bash
-./gradlew test
-```
-
 ## 파일 저장 경로
 
 업로드된 PDF 템플릿과 변환 이미지는 기본적으로 아래 경로에 저장됩니다.
